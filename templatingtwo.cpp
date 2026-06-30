@@ -67,7 +67,6 @@ int main() {
     function<bool(double)> gt_10 = [](double x) {
         return x > 10.0;
     };
-
     double result2 = until(1.0, add1, gt_10);
     assert(result2 > 10.0);
 
